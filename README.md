@@ -10,7 +10,7 @@
 ![AJAX](https://img.shields.io/badge/AJAX-Asynchronous-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-The **Student Result Management Portal (SRMS)** is a web-based academic management system developed using **PHP** and **MySQL**. It enables educational institutions to efficiently manage student records, subjects, classes, examination results, and notices through a secure administrator portal while allowing students to access their academic results using their Roll ID.
+The **Student Result Management Portal (SRMS)** is a web-based academic management system developed using **PHP** and **MySQL**. It enables educational institutions to manage student records, subjects, classes, results, and notices through an admin panel while allowing students to view their academic results using their Roll ID.
 
 ---
 
@@ -27,12 +27,11 @@ Student-Result-Management-Portal/
 ├── includes/               # Common PHP components
 ├── js/                     # JavaScript files
 ├── saas/                   # SCSS source files
+├── screenshots/            # Project screenshots
 │
 ├── index.php               # Home page
-├── admin/                  # Administrator module
-├── student/                # Student module
-├── login.php               # Authentication
-├── logout.php
+├── add-students.php        # Student management
+├── add-result.php          # Result management
 ├── README.md
 └── ...
 ```
@@ -66,14 +65,14 @@ Student-Result-Management-Portal/
 # ✨ Key Highlights
 
 - 🎓 Student Result Management
-- 👨‍🏫 Administrator Dashboard
+- 👨‍💼 Admin Dashboard
 - 📚 Class & Subject Management
-- 📝 Examination Result Publishing
+- 📝 Result Declaration and Editing
 - 🔍 Student Result Search
 - 📢 Notice Board Management
-- 🔐 Secure Administrator Login
-- 📄 PDF Report Generation
-- ⚡ Responsive Web Interface
+- 🔐 Admin Authentication
+- 📄 PDF Result Download
+- ⚡ Database-driven Web Application
 
 ---
 
@@ -96,31 +95,54 @@ Student-Result-Management-Portal/
 ## 👨‍💼 Administrator Module
 
 > 📖 **Description**  
-> The administrator portal provides complete control over student records, examination results, classes, subjects, notices, and system administration through a secure authentication system.
+> The administrator portal allows admins to manage students, classes, subjects, notices, and academic results through a secure dashboard.
 
-> 🛠 **Features**
->
-> • Dashboard  
-> • Student Registration & Management  
-> • Class Management  
-> • Subject Management  
-> • Subject Combination Management  
-> • Result Declaration & Editing  
-> • Notice Management  
-> • Password Management
+> 🛠 **Features**  
+> Dashboard • Student Management • Class Management • Subject Management • Result Management • Notice Management • Password Management
 
 ---
 
 ## 👨‍🎓 Student Module
 
 > 📖 **Description**  
-> Students can securely search and view their academic results using their Roll ID without requiring administrative access.
+> Students can search and view their academic results using their Roll ID and download their result details.
 
-> 🛠 **Features**
->
-> • Result Search  
-> • View Academic Results  
-> • Notice Board Access
+> 🛠 **Features**  
+> Result Search • View Result • Download Result • Notice Access
+
+---
+
+# 📸 Project Screenshots
+
+## 🔐 Authentication Page
+
+<p align="center">
+  <img src="screenshots/Authentication.png" width="900">
+</p>
+
+---
+
+## 📊 Admin Dashboard
+
+<p align="center">
+  <img src="screenshots/Dashboard.png" width="900">
+</p>
+
+---
+
+## 👨‍🎓 Manage Students
+
+<p align="center">
+  <img src="screenshots/Manage%20Students.png" width="900">
+</p>
+
+---
+
+## 📄 Student Result Page
+
+<p align="center">
+  <img src="screenshots/Results.png" width="900">
+</p>
 
 ---
 
@@ -138,9 +160,9 @@ cd Student-Result-Management-Portal
 
 ## 2. Install Project
 
-Copy the project folder into your local web server directory.
+Copy the project folder into your local server directory.
 
-Example (XAMPP):
+Example for XAMPP:
 
 ```text
 C:\xampp\htdocs\
@@ -156,7 +178,7 @@ C:\xampp\htdocs\Student-Result-Management-Portal
 
 ## 3. Start Services
 
-Launch **XAMPP Control Panel** and start:
+Open **XAMPP Control Panel** and start:
 
 ```text
 Apache
@@ -208,24 +230,13 @@ Password : Test@123
 
 ---
 
-## 👨‍🎓 Sample Student
+## 👨‍🎓 Sample Student Details
 
 ```text
-Student Name : Anuj Kumar
-Roll ID      : 10861
-Class        : Fourth (C)
+Student Name : NAGELLA RAVITEJA REDDY
+Roll ID      : 0667
+Class        : Operating System (A)
 ```
-
----
-
-# 📸 Screenshots
-
-> Screenshots can be added here.
-
-- 🏠 Home Page
-- 👨‍💼 Administrator Dashboard
-- 🔍 Student Result Search
-- 📄 Student Result Page
 
 ---
 
@@ -234,7 +245,7 @@ Class        : Fourth (C)
 - 📧 Email Notifications
 - 📱 Mobile Responsive Dashboard
 - 📊 Advanced Result Analytics
-- 📥 Excel & PDF Export
+- 📥 Excel Export
 - ☁️ Cloud Deployment
 - 🔐 Two-Factor Authentication
 - 👨‍🏫 Faculty Portal
